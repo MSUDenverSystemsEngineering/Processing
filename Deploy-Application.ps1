@@ -189,7 +189,7 @@ Try {
 
 		Remove-Folder -Path "$envProgramFiles\Processing-3.4"
 
-		Remove-File -Path "$envCommonPrograms\Processing 3.4.lnk"
+		Remove-File -Path "C:\Users\Public\Desktop\Processing 3.4.lnk"
 
 		##*===============================================
 		##* POST-UNINSTALLATION
