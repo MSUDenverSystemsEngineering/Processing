@@ -67,13 +67,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Processing.org'
 	[string]$appName = 'Processing'
-	[string]$appVersion = '4.0'
+	[string]$appVersion = '4.2'
 	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '3.8.4'
-	[string]$appScriptDate = '06/07/2022'
-	[string]$appScriptAuthor = 'Ryan McKenna'
+	[string]$appScriptDate = '03/24/2023'
+	[string]$appScriptAuthor = 'Sebastian Bickford'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
@@ -146,7 +146,7 @@ Try {
 
 		## <Perform Installation tasks here>
 
-		Copy-File -Path "$dirFiles\processing-4.0b8" -Destination "C:\Program Files\" -Recurse
+		Copy-File -Path "$dirFiles\processing-4.2" -Destination "C:\Program Files\" -Recurse
 
 
 		##*===============================================
@@ -156,7 +156,7 @@ Try {
 
 		## <Perform Post-Installation tasks here>
 
-		Copy-File -Path "$dirSupportFiles\Processing 4.0.lnk" -Destination "C:\Users\Public\Desktop" -Recurse
+		Copy-File -Path "$dirSupportFiles\Processing 4.2.lnk" -Destination "C:\Users\Public\Desktop" -Recurse
 		
 		## Display a message at the end of the install
 		If (-not $useDefaultMsi) {
@@ -223,8 +223,8 @@ Catch {
 # SIG # Begin signature block
 # MIImVgYJKoZIhvcNAQcCoIImRzCCJkMCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBoU7s9HZkhZFQI
-# 6P36Hkz/V9C5gOpfJ8dSwE7sl5DSxqCCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCB9uI1/z+dBvPYW
+# f9BadG2kE02HNPumrLbgB9/SlwsZk6CCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
 # jTanyYqJ1pQWMA0GCSqGSIb3DQEBDAUAMHsxCzAJBgNVBAYTAkdCMRswGQYDVQQI
 # DBJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcMB1NhbGZvcmQxGjAYBgNVBAoM
 # EUNvbW9kbyBDQSBMaW1pdGVkMSEwHwYDVQQDDBhBQUEgQ2VydGlmaWNhdGUgU2Vy
@@ -398,32 +398,32 @@ Catch {
 # ZDErMCkGA1UEAxMiU2VjdGlnbyBQdWJsaWMgQ29kZSBTaWduaW5nIENBIFIzNgIR
 # AKVN33D73PFMVIK48rFyyjEwDQYJYIZIAWUDBAIBBQCggYQwGAYKKwYBBAGCNwIB
 # DDEKMAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgorBgEE
-# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgwdXqsOqie+O/
-# Q6ylNW6oRakZGw4zU/26FvUBStmAqEwwDQYJKoZIhvcNAQEBBQAEggGAaNMNvGbU
-# P0nWmpK/JU3yiNpQKYrd8LiIhkxuEaNYgDnbatZGg6cpk/kgFMhVRraRm+jbEmtK
-# MAHDByW22p0Ha3NHOVWlesU11ORX9tOiC8yK+EUqD3dy88vUCfN4sVTBmjZ/cW2H
-# CcsI0HGLCG4BDvVgXOk0q7A8soR0vOtqaMLre1OXvDTcwoVeumDVnji+6nfZ95NL
-# YgaRQ/vX12CdmHzQm1z+CtuFFcRgQpoMZbleXdWOxsXCAR8OQ9kudkhmE8nCfpkj
-# B256MgxOU33Ed+fmkpzWe0WF7nYraKYCmnq6a8Hn/MYP/iSYBLid/T04b9ZJUBJ7
-# iDshTM9RZFvH+VmDzKBAjwlnk38X2pfJTGFvcMV9/G7wmBR3xTPNXqcSWqGWMYrw
-# VqPHTb1iV/aB+qpJHmnx4jG92/e44hTHEhLyROUBbA1a7t59oiyskuz1wkQRN9Mt
-# BTRcM057MKyTYRVEVYByyP6FvrcLutDtSllzMEzUwFzK26OOW8X8ATzeoYIDTDCC
+# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgV72azU49r/Bs
+# Mkh9xk6nPTVRcFHOZYUCUp5yd+Rp30QwDQYJKoZIhvcNAQEBBQAEggGAGm1cMjE0
+# c7fOSviCNKiRT9W3v/dpVhRskzozm/w51PstsqjWNENwfTiX5yNaJMawEjO93cKg
+# hOrX+Xw3YjJRUKhmzr6tJDhieL2nnRutym7evBT1eYyZWKJD1ns05S3gSlndWlxm
+# Bp7Wh5DaYT6pt5XYsvOTZ7SOmsF2MRp7Pqetv0BE0PbLrKxl0Ii0jg6yw8W8HZyG
+# +k7Tm4poxgDA5XDOZE++GSU5DnM+X0emHSpDEp41Uv4YWO9+1QNVMwMxC1jwIMwl
+# YsVm4xjFm/bzXMH2n2I0gGKDVR/O59+8r+oXBVGmJeHwF2szuu/f9xmDA/76d3/n
+# CphBr1naiDDCkMui5SgIV40hNd7yFMX9v2Pr1MDxI9ji3EMauYAHwHRL+0XJHiQD
+# 8XDHITV1lKwlEazsPmQj+ZPcC245fCIa+99tWYiyZN33cYefg+F3O916EXJa60ZS
+# S5vTWHgBNILL87my35skqOx5n8KQxE1eA7NNr29eUtzx4rVa96SzzxtYoYIDTDCC
 # A0gGCSqGSIb3DQEJBjGCAzkwggM1AgEBMIGSMH0xCzAJBgNVBAYTAkdCMRswGQYD
 # VQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNV
 # BAoTD1NlY3RpZ28gTGltaXRlZDElMCMGA1UEAxMcU2VjdGlnbyBSU0EgVGltZSBT
 # dGFtcGluZyBDQQIRAJA5f5rSSjoT8r2RXwg4qUMwDQYJYIZIAWUDBAICBQCgeTAY
-# BgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjA2MDcy
-# MDUzNDlaMD8GCSqGSIb3DQEJBDEyBDDNf7hzn7XDejSRRPdM28fj5w/dmskzyp7A
-# N4tZY3suXWM3Fu4jQvUxUo7WnygwdckwDQYJKoZIhvcNAQEBBQAEggIAEkK20/pJ
-# q254vACnnmsQz802MF/1p5VIBkUgj2mWVhi5NGY4xd936d3i+hsjGP6KI5ZBkfOp
-# wR2zTbPoONaZMMcWbBNINDavMdgQTUL8AlBoCsmTIrXifIjD3eNAPmY50Uiut4a5
-# 25+YCBngha7IaPuUGMm80lCsiNGa4xN9Q12N3IpzYwbmXUoH6eqg6sFmDALm9NyO
-# 2T8DTIxczOzD8Pil0z9bifWbib4x5cxcSsQzjwLLNlmiiUjlI8Az0pP6Q6ftPUfa
-# sQurEFSNJbJwzUx0WfaxEV/pRH0/EXKRohHqIQiEWJKNZeEme9lC1CSFoDxuPDVq
-# M7KV9bMo+G88L4G/28ITFd/N0dFnOPU6bkIdn7rQzYwABoJFSIW/8/KXtOfOl8FA
-# mX3P19jhRzYi+LzeMRxunHfMzHr9s/UR1/1tTsUCjQuW5SnWoQGk44V1KYfOqHu/
-# hGmHnH4tHD/PNW51SIJ9oMzYbiV2wbNNaIWE+ndekxJVNqjFN0W6GGDpB29d624J
-# 7QHKOKxcLUZeNEiNA6BymfRTfeNtyszcbRIKUDG3jPV/HzEN1Dl+p7rfSvy8O4RU
-# K21EOOZxvvtpeNdNguA+IY/l5fiOV4FnM3SOUcaPPyMB/qqMY+wG+Q1uNR28u4sM
-# 5Fd9EEzQ9oiBm2OKEWSvGUS7qJh2HtaJP6o=
+# BgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMzAzMjQy
+# MTE3MzZaMD8GCSqGSIb3DQEJBDEyBDDyaszT+bQFxrKmjFcRqMOr34BFd76WGTu0
+# BUHFu3un1NVBDzx2h0pWMwtR7mJIBNcwDQYJKoZIhvcNAQEBBQAEggIAPBm0A1cl
+# WzdVmt65nXee7Dad0eyRNEuGZQw7uO+Rji+pvZPxXZOAxmS08Tlliq3i5DhqUkzb
+# ztogKD2V4BRnnn8Qrt4o/vrGtVOTXuhqrdgJNw0XWTamM8VKEUtX35/pvVCJGQk6
+# ssSQUUcMh83mcCcGNJgO9VcrpGa0o5xrjfqrO9UpKfpZHaE2VQwQhNLmj792uJFl
+# mKrgYWL8KKUcEQfjvl+Mk2/vJmzWZdd08ucal/1y+vNvAeNvOZAxDlu4skimbpce
+# ERUh9gr5gldn4hTQ5wJK90Lavcx5+dUU5t0hqAUtWqsIK20iMrPBlr877vKq6Rcz
+# P35FKk25VL7l+toa9qYjWGmhyjkL0Ke6KRqtr6pq9GtVuBCqQbPBoIBOiL7qz/rd
+# P94eloUwOUgz5aRqThy0qXNEA3WMJVQ5U8Yqu1rboiqlE6nCilRGk4EoBoNdtaBC
+# WtvfuJFfRiHUcGcn7jEJIPsxzbVH+pHD8jvLpRCVC4x9A800a4XMRm+tYw3yECll
+# oU6GZDU1iYLHio2T0Q4caOCLDsz5KrDg6Q6ndaNhtJH48PwNQKmwV6qkO5reRFFJ
+# KPzl4bGOv7pRq3pxtynauQYwtonvKiGga16QdtyhM9CtkYpRJNvrOI8PyNlVDqcL
+# TLeye7lIKG/2QUnabM3hsR9f3toEr9b7fLY=
 # SIG # End signature block
